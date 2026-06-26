@@ -1,700 +1,2528 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fizzah Ehtisham | Script Writer, Content Strategist & Social Media Head</title>
+  <meta name="description" content="Portfolio of Fizzah Ehtisham - Script Writer and Content Strategist specializing in high-converting real estate marketing, sales copy, and social media strategy." />
+  <meta name="keywords" content="Real Estate Script Writer, Content Strategist, Social Media Marketing, Real Estate Marketing, Copywriter Pakistan, Expat Real Estate Investment" />
+  <meta name="author" content="Fizzah Ehtisham" />
+  <meta property="og:title" content="Fizzah Ehtisham | Script Writer & Content Strategist" />
+  <meta property="og:description" content="Portfolio of Fizzah Ehtisham - Script Writer and Content Strategist specializing in high-converting real estate marketing." />
+  <meta property="og:type" content="website" />
+  <style>
+/* 
+   Fizzah Ehtisham - Premium Portfolio CSS
+   Theme: Charcoal Black + White + Champagne Gold
+   Aesthetic: High-end, Elegant, Modern
+*/
 
-    <!-- SEO Meta Tags -->
-    <title>Fizzah Ehtisham | Script Writer, Content Strategist & Social Media Head</title>
-    <meta name="description" content="Portfolio of Fizzah Ehtisham - Script Writer and Content Strategist specializing in high-converting real estate marketing, sales copy, and social media strategy." />
-    <meta name="keywords" content="Real Estate Script Writer, Content Strategist, Social Media Marketing, Real Estate Marketing, Copywriter Pakistan, Expat Real Estate Investment" />
-    <meta name="author" content="Fizzah Ehtisham" />
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Fizzah Ehtisham | Script Writer & Content Strategist" />
-    <meta property="og:description" content="Portfolio of Fizzah Ehtisham - Script Writer and Content Strategist specializing in high-converting real estate marketing." />
-    <meta property="og:type" content="website" />
+:root {
+  /* Colors */
+  --color-charcoal-dark: #0D1117;    /* Deepest background slate */
+  --color-charcoal-medium: #1F2937;  /* Standard charcoal black */
+  --color-charcoal-light: #374151;   /* Warm card background */
+  
+  --color-gold: #D4AF37;             /* Classic Champagne Gold */
+  --color-gold-light: #F3E5AB;       /* Soft cream champagne for hover */
+  --color-gold-raw: 212, 175, 55;    /* Gold RGB values for alpha styling */
+  
+  --color-white: #FFFFFF;
+  --color-gray-light: #F3F4F6;
+  --color-gray-muted: #9CA3AF;
+  --color-gray-dark: #4B5563;
+  
+  /* Glassmorphism settings */
+  --bg-glass: rgba(13, 17, 23, 0.7);
+  --border-glass: rgba(212, 175, 55, 0.15);
+  --border-glass-hover: rgba(212, 175, 55, 0.4);
+  
+  /* Fonts */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  /* Shadows */
+  --shadow-gold-soft: 0 4px 20px rgba(212, 175, 55, 0.08);
+  --shadow-gold-heavy: 0 8px 30px rgba(212, 175, 55, 0.2);
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="/src/style.css" />
-  </head>
-  <body>
+/* Reset & Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    <!-- Navigation Header -->
-    <header class="navbar" id="navbar">
-      <div class="container">
-        <a href="#home" class="logo-container" id="nav-logo">
-          <span class="logo-text">Fizzah</span>
-          <span class="logo-sub">Content & Sales</span>
-        </a>
-        <nav>
-          <ul class="nav-menu" id="nav-menu">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#scripts" class="nav-link">Sample Script</a></li>
-            <li><a href="#ideas" class="nav-link">Content Ideas</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#contact" class="nav-cta">Let's Connect</a></li>
-          </ul>
-        </nav>
-        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </header>
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 
-    <main>
-      <!-- Hero Section -->
-      <section id="home" class="hero-section">
-        <div class="container hero-layout">
-          <div class="hero-text animate-on-scroll">
-            <div class="hero-badge">
-              <span class="dot"></span>
-              Real Estate Content Specialist
-            </div>
-            <h1 class="hero-title">
-              Great content doesn't just get views.<br><span>It builds trust and drives action.</span>
-            </h1>
-            <p class="hero-subtitle">Script Writer | Content Strategist | Social Media Head</p>
-            <p class="hero-desc">
-              I combine real-world real estate sales experience with psychology-driven content strategy. I don't just write scripts. I build digital funnels that turn casual viewers into qualified buyers, specifically optimized for USA real estate and overseas Pakistani investors.
-            </p>
-            <div class="hero-buttons">
-              <a href="#scripts" class="btn btn-primary">View Sample Script</a>
-              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-          </div>
-          <div class="hero-visual animate-on-scroll">
-            <div class="visual-backdrop"></div>
-            <div class="portrait-frame">
-              <div class="portrait-graphic">
-                <div class="portrait-decor">FE</div>
-                <div class="portrait-content">
-                  <div class="portrait-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </div>
-                  <h3 class="portrait-title">Fizzah Ehtisham</h3>
-                  <p class="portrait-subtitle">Karachi, Pakistan</p>
-                  <p class="portrait-quote">"The writer who knows how to sell. Combining sales psychology with audience retention."</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+body {
+  background-color: var(--color-charcoal-dark);
+  color: var(--color-gray-light);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.02) 0%, transparent 40%);
+  background-attachment: fixed;
+}
 
-      <!-- About / Philosophy Section -->
-      <section id="about" class="section section-alt">
-        <div class="container">
-          <div class="section-header animate-on-scroll">
-            <span class="section-subtitle">My Philosophy</span>
-            <h2 class="section-title">The Psychology of the Script</h2>
-            <div class="section-divider"></div>
-          </div>
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-charcoal-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 5px;
+  border: 2px solid var(--color-charcoal-dark);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
 
-          <div class="about-grid">
-            <div class="about-text-content animate-on-scroll">
-              <p class="lead-p">
-                Most writers focus purely on metrics like watch time or click rates. I focus on customer behavior.
-              </p>
-              <p class="body-p">
-                Having worked face-to-face with investors as a Sales Ambassador at Dreamworld and Dua Green Farm House, I learned customer psychology on the ground. I understand the questions buyers ask, the unspoken objections they hold, and the trust issues they face when investing, particularly those living abroad in the USA, Canada, and the UK.
-              </p>
-              <p class="body-p">
-                When I write a script for a real estate campaign, I am not just creating entertainment. I am preemptively addressing objections, building institutional trust, and guiding the viewer toward a business goal.
-              </p>
+/* Selection highlight */
+::selection {
+  background-color: rgba(212, 175, 55, 0.3);
+  color: var(--color-white);
+}
 
-              <div class="about-features">
-                <div class="feature-box">
-                  <div class="feature-icon-wrapper">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="feature-title">Sales Psychology</h4>
-                    <p class="feature-desc">Structuring hooks around actual consumer desires and barriers.</p>
-                  </div>
-                </div>
-                <div class="feature-box">
-                  <div class="feature-icon-wrapper">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="feature-title">Strategic Hooks</h4>
-                    <p class="feature-desc">Capturing attention within the first 3 seconds with relevant, high-impact statements.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+/* Typography */
+h1, h2, h3, h4, .brand-name {
+  font-family: var(--font-serif);
+  color: var(--color-white);
+  font-weight: 600;
+}
 
-            <div class="human-sidebar animate-on-scroll">
-              <div>
-                <h3 class="sidebar-title">Beyond the Desk <span>Personal</span></h3>
-                <p style="font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5;">
-                  A writer's creativity comes from real life. Here is what keeps my mind active when I'm not crafting scripts:
-                </p>
-                <ul class="interest-list">
-                  <li class="interest-item">
-                    <div class="interest-icon">🏍️</div>
-                    <div>
-                      <p class="interest-name">Motorcycle Riding</p>
-                      <p class="interest-detail">Freedom on the road sharpens perspective.</p>
-                    </div>
-                  </li>
-                  <li class="interest-item">
-                    <div class="interest-icon">📚</div>
-                    <div>
-                      <p class="interest-name">Reading & Research</p>
-                      <p class="interest-detail">Psychology, marketing, and human behavior.</p>
-                    </div>
-                  </li>
-                  <li class="interest-item">
-                    <div class="interest-icon">🎬</div>
-                    <div>
-                      <p class="interest-name">Analyzing Viral Content</p>
-                      <p class="interest-detail">Reverse-engineering what makes people stop scrolling.</p>
-                    </div>
-                  </li>
-                  <li class="interest-item">
-                    <div class="interest-icon">🌍</div>
-                    <div>
-                      <p class="interest-name">Global Market Watching</p>
-                      <p class="interest-detail">Tracking expat investment trends across USA, UK, Canada.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+p {
+  color: var(--color-gray-muted);
+  font-weight: 300;
+  font-size: 1.05rem;
+}
 
-      <!-- Services Section -->
-      <section id="services" class="section">
-        <div class="container">
-          <div class="section-header animate-on-scroll">
-            <span class="section-subtitle">What I Offer</span>
-            <h2 class="section-title">Services Built for Results</h2>
-            <div class="section-divider"></div>
-          </div>
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
 
-          <div class="services-grid">
-            <!-- Service 1 -->
-            <div class="glass-card service-card animate-on-scroll">
-              <div class="service-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3 class="service-title">Real Estate Script Writing</h3>
-              <p class="service-desc">Psychology-driven scripts engineered to convert viewers into investors. Every word serves a strategic function — from the hook to the CTA.</p>
-              <ul class="service-bullets">
-                <li>YouTube long-form scripts (8–20 min)</li>
-                <li>Instagram & TikTok reels (30–90 sec)</li>
-                <li>Investor pitch video scripts</li>
-                <li>Property tour narrations</li>
-              </ul>
-            </div>
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.25rem 0;
+  z-index: 1000;
+  background: rgba(13, 17, 23, 0.75);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  transition: var(--transition-smooth);
+}
 
-            <!-- Service 2 -->
-            <div class="glass-card service-card animate-on-scroll">
-              <div class="service-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3 class="service-title">Content Strategy & Planning</h3>
-              <p class="service-desc">Full-funnel content calendars that align with sales cycles, audience buying behavior, and platform algorithms for maximum reach.</p>
-              <ul class="service-bullets">
-                <li>Monthly content calendars</li>
-                <li>Audience persona development</li>
-                <li>Platform-specific strategy (IG, YT, TikTok)</li>
-                <li>Competitor content audits</li>
-              </ul>
-            </div>
+.navbar.scrolled {
+  padding: 0.8rem 0;
+  background: rgba(13, 17, 23, 0.95);
+  border-bottom-color: rgba(212, 175, 55, 0.25);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
 
-            <!-- Service 3 -->
-            <div class="glass-card service-card animate-on-scroll">
-              <div class="service-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3 class="service-title">Social Media Management</h3>
-              <p class="service-desc">End-to-end management of real estate brand social channels — turning passive followers into active leads through consistent, trust-building content.</p>
-              <ul class="service-bullets">
-                <li>Profile optimization & branding</li>
-                <li>Posting schedules & community mgmt</li>
-                <li>DM funnel scripts & responses</li>
-                <li>Analytics reporting & iteration</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-      <!-- Sample Script / Teleprompter Section -->
-      <section id="scripts" class="section section-alt">
-        <div class="container">
-          <div class="section-header animate-on-scroll">
-            <span class="section-subtitle">Work Sample</span>
-            <h2 class="section-title">Live Script Reader</h2>
-            <div class="section-divider"></div>
-          </div>
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
 
-          <div class="script-layout">
-            <!-- Script Context / Meta -->
-            <div class="script-meta animate-on-scroll">
-              <span class="script-badge">YouTube Script · Real Estate</span>
-              <h3 class="script-title">5 Biggest Mistakes First-Time Buyers Make</h3>
-              <p class="script-context">
-                This script targets first-time US home buyers overwhelmed by the process. It leads with a counter-intuitive hook to stop the scroll, then delivers rapid-fire value while building trust through shared buyer psychology.
-              </p>
-              <ul class="script-highlights">
-                <li class="highlight-item">
-                  <span class="highlight-num">1</span>
-                  <div>
-                    <p class="highlight-title">Counter-Intuitive Hook</p>
-                    <p class="highlight-desc">Opens with the most surprising mistake — not the most obvious one.</p>
-                  </div>
-                </li>
-                <li class="highlight-item">
-                  <span class="highlight-num">2</span>
-                  <div>
-                    <p class="highlight-title">Sustained Retention Loop</p>
-                    <p class="highlight-desc">Mistake #5 is teased at second 8 and revealed at second 50.</p>
-                  </div>
-                </li>
-                <li class="highlight-item">
-                  <span class="highlight-num">3</span>
-                  <div>
-                    <p class="highlight-title">Low-Friction CTA</p>
-                    <p class="highlight-desc">Comment keyword activation — zero sales pressure.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+.logo-text {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, var(--color-white) 30%, var(--color-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
 
-            <!-- Teleprompter Widget -->
-            <div class="teleprompter-card" id="teleprompter-widget">
-              <div class="teleprompter-header">
-                <div class="teleprompter-indicator">
-                  <span class="blink-dot" id="blink-dot"></span>
-                  <span id="tele-status">Teleprompter Off</span>
-                </div>
-                <div class="teleprompter-controls-top">
-                  <button class="tele-btn-toggle active" id="btn-tele-off">Read Mode</button>
-                  <button class="tele-btn-toggle" id="btn-tele-on">Teleprompter</button>
-                </div>
-              </div>
+.logo-sub {
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  color: var(--color-gray-muted);
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  margin-top: 2px;
+}
 
-              <div class="teleprompter-screen" id="tele-screen">
-                <div class="script-content-flow" id="script-flow">
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  align-items: center;
+}
 
-                  <div class="script-chunk current-chunk">
-                    <span class="chunk-tag">⚡ HOOK — 0:00 to 0:08</span>
-                    <p>The biggest homebuying mistake isn't buying the wrong house.</p>
-                    <p>It's talking to the wrong bank first.</p>
-                    <span class="visual-note">📸 Visual: Split screen — buyer at bank desk vs buyer signing keys</span>
-                  </div>
+.nav-link {
+  text-decoration: none;
+  color: var(--color-gray-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: var(--transition-smooth);
+  position: relative;
+  padding: 0.5rem 0;
+}
 
-                  <div class="script-chunk">
-                    <span class="chunk-tag">🔁 LOOP BAIT — 0:08 to 0:12</span>
-                    <p>And by the end of this video, I'll also reveal Mistake Number 5 — the one that quietly costs buyers an average of $11,000.</p>
-                    <span class="visual-note">📸 Visual: Text overlay "Mistake #5 = $11,000" with alert icon</span>
-                  </div>
+.nav-link:hover {
+  color: var(--color-gold);
+}
 
-                  <div class="script-chunk">
-                    <span class="chunk-tag">📌 MISTAKE 1 — 0:12 to 0:20</span>
-                    <p>Mistake One: Getting pre-qualified instead of pre-approved.</p>
-                    <p>Pre-qualification is just an estimate. Pre-approval is a commitment. Sellers don't take pre-qualification seriously in today's market.</p>
-                    <span class="visual-note">📸 Visual: Checklist animation — "Pre-Qual ❌" vs "Pre-Approval ✅"</span>
-                  </div>
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-gold);
+  transition: var(--transition-smooth);
+}
 
-                  <div class="script-chunk">
-                    <span class="chunk-tag">📌 MISTAKE 2 — 0:20 to 0:28</span>
-                    <p>Mistake Two: Skipping the home inspection to win a bidding war.</p>
-                    <p>I get it. Emotions are high. But waiving inspection means you're buying the seller's hidden problems too.</p>
-                    <span class="visual-note">📸 Visual: Cracked foundation or leaky ceiling b-roll</span>
-                  </div>
+.nav-link:hover::after {
+  width: 100%;
+}
 
-                  <div class="script-chunk">
-                    <span class="chunk-tag">📌 MISTAKE 3 — 0:28 to 0:36</span>
-                    <p>Mistake Three: Draining your savings account for the down payment.</p>
-                    <p>If you have zero cash reserves after closing — one broken AC unit could put you in serious debt. Always keep 3 months of expenses liquid.</p>
-                    <span class="visual-note">📸 Visual: Empty wallet graphic → Reserve fund graphic</span>
-                  </div>
+.nav-cta {
+  background: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  padding: 0.6rem 1.25rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  text-decoration: none;
+}
 
-                  <div class="script-chunk">
-                    <span class="chunk-tag">📌 MISTAKE 4 — 0:36 to 0:44</span>
-                    <p>Mistake Four: Not accounting for hidden costs.</p>
-                    <p>Property taxes. HOA fees. Homeowner's insurance. Closing costs. These alone can add 2 to 5 percent to your purchase price. Did your agent mention that?</p>
-                    <span class="visual-note">📸 Visual: Cost breakdown infographic on screen</span>
-                  </div>
+.nav-cta:hover {
+  background: var(--color-gold);
+  color: var(--color-charcoal-dark);
+  box-shadow: var(--shadow-gold-soft);
+}
 
-                  <div class="script-chunk">
-                    <span class="chunk-tag">⚠️ MISTAKE 5 (PAYOFF) — 0:44 to 0:55</span>
-                    <p>And Mistake Five — the one worth $11,000?</p>
-                    <p>Not negotiating the seller's concessions. Most buyers don't know they can ask the seller to cover closing costs, repairs, or even rate buydowns.</p>
-                    <p>Your agent should be doing this. If they're not — you need a different agent.</p>
-                    <span class="visual-note">📸 Visual: Contract signing with "Seller Concessions" highlighted</span>
-                  </div>
+/* Mobile Nav Toggle */
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
 
-                  <div class="script-chunk">
-                    <span class="chunk-tag">📣 CALL TO ACTION — 0:55 to 1:05</span>
-                    <p>If this was helpful, comment the word CHECKLIST below.</p>
-                    <p>I'll send you our complete First-Time Buyer Mistake-Proof Checklist — directly to your inbox. No cost. Just clarity.</p>
-                    <span class="visual-note">📸 Visual: Comment section animation + DM icon</span>
-                  </div>
+.mobile-nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-white);
+  margin: 5px 0;
+  transition: var(--transition-smooth);
+}
 
-                </div>
-              </div>
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 
-              <div class="teleprompter-footer">
-                <div class="tele-playback-controls">
-                  <button class="btn-play-pause" id="btn-play-pause" aria-label="Play or Pause Teleprompter">
-                    <svg id="play-icon" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                    <svg id="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
-                      <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                    </svg>
-                  </button>
-                  <div class="tele-speed-controls">
-                    <span>Speed</span>
-                    <input type="range" id="tele-speed" min="1" max="10" value="5" />
-                    <span class="speed-val" id="speed-val">5x</span>
-                  </div>
-                </div>
-                <button class="tele-reset-btn" id="btn-reset-tele">↺ Reset</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+}
 
-      <!-- Content Ideas Section -->
-      <section id="ideas" class="section">
-        <div class="container">
-          <div class="section-header animate-on-scroll">
-            <span class="section-subtitle">Strategy Showcase</span>
-            <h2 class="section-title">Content Ideas & Blueprints</h2>
-            <div class="section-divider"></div>
-            <p style="margin-top: 1.25rem; color: var(--color-gray-muted);">Click any card to reveal the full content strategy blueprint behind each idea.</p>
-          </div>
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: var(--color-gold);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  backdrop-filter: blur(5px);
+}
 
-          <!-- Tab Filter -->
-          <div class="ideas-tabs-container animate-on-scroll">
-            <button class="idea-tab-btn active" data-category="real-estate">Real Estate</button>
-            <button class="idea-tab-btn" data-category="short-form">Short Form</button>
-          </div>
+.hero-badge .dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--color-gold);
+  animation: pulse 2s infinite;
+}
 
-          <div class="ideas-grid">
-            <!-- Real Estate Ideas -->
-            <div class="glass-card idea-card animate-on-scroll" data-category="real-estate" data-slug="mistakes">
-              <div class="idea-content-wrapper">
-                <div class="idea-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <h4 class="idea-title">5 Biggest Mistakes First-Time Home Buyers Make</h4>
-                <p style="font-size: 0.85rem; color: var(--color-gray-muted); margin-bottom: 1.25rem;">Hook: "The biggest homebuying mistake isn't buying the wrong house. It's talking to the wrong bank first."</p>
-                <p class="idea-action-txt">View Full Strategy Blueprint →</p>
-              </div>
-            </div>
+.hero-title {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
 
-            <div class="glass-card idea-card animate-on-scroll" data-category="real-estate" data-slug="rent-vs-buy">
-              <div class="idea-content-wrapper">
-                <div class="idea-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <h4 class="idea-title">Renting vs Buying in 2026 — The Real Numbers</h4>
-                <p style="font-size: 0.85rem; color: var(--color-gray-muted); margin-bottom: 1.25rem;">Hook: "If you're still renting because you're waiting for interest rates to drop... you might be losing money."</p>
-                <p class="idea-action-txt">View Full Strategy Blueprint →</p>
-              </div>
-            </div>
+.hero-title span {
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-            <div class="glass-card idea-card animate-on-scroll" data-category="real-estate" data-slug="buy-power">
-              <div class="idea-content-wrapper">
-                <div class="idea-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <h4 class="idea-title">What $500,000 Buys Across Different States</h4>
-                <p style="font-size: 0.85rem; color: var(--color-gray-muted); margin-bottom: 1.25rem;">Hook: "Here is what half a million dollars actually gets you in Texas vs California vs Florida."</p>
-                <p class="idea-action-txt">View Full Strategy Blueprint →</p>
-              </div>
-            </div>
+.hero-subtitle {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  color: var(--color-gray-light);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
 
-            <!-- Short Form Ideas -->
-            <div class="glass-card idea-card animate-on-scroll" data-category="short-form" data-slug="did-you-know" style="display:none;">
-              <div class="idea-content-wrapper">
-                <div class="idea-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <h4 class="idea-title">"Did You Know?" Surprising Real Estate Facts</h4>
-                <p style="font-size: 0.85rem; color: var(--color-gray-muted); margin-bottom: 1.25rem;">Hook: "Did you know that painting your front door this specific color can add $6,000 to your home's value?"</p>
-                <p class="idea-action-txt">View Full Strategy Blueprint →</p>
-              </div>
-            </div>
+.hero-desc {
+  font-size: 1.1rem;
+  color: var(--color-gray-muted);
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
 
-            <div class="glass-card idea-card animate-on-scroll" data-category="short-form" data-slug="myth-vs-reality" style="display:none;">
-              <div class="idea-content-wrapper">
-                <div class="idea-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <h4 class="idea-title">Overseas Investment Myths vs Reality</h4>
-                <p style="font-size: 0.85rem; color: var(--color-gray-muted); margin-bottom: 1.25rem;">Hook: "Myth: Investing in Pakistan from abroad is too risky. Reality: The safest deals never hit the public market."</p>
-                <p class="idea-action-txt">View Full Strategy Blueprint →</p>
-              </div>
-            </div>
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
 
-            <div class="glass-card idea-card animate-on-scroll" data-category="short-form" data-slug="tour-60s" style="display:none;">
-              <div class="idea-content-wrapper">
-                <div class="idea-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M15 10l4.553-2.069A1 1 0 0121 8.82v6.36a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <h4 class="idea-title">Luxury Property Tours in 60 Seconds</h4>
-                <p style="font-size: 0.85rem; color: var(--color-gray-muted); margin-bottom: 1.25rem;">Hook: "Step inside this $2.5 Million Farmhouse in Karachi's premium sector — in just 60 seconds."</p>
-                <p class="idea-action-txt">View Full Strategy Blueprint →</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
 
-      <!-- Strategy Detail Drawer -->
-      <div class="strategy-overlay" id="strategy-drawer">
-        <div class="strategy-modal">
-          <button class="btn-close-modal" id="btn-close-strategy" aria-label="Close Strategy Modal">&times;</button>
-          <p class="modal-label" id="modal-label">Strategy Blueprint</p>
-          <h3 class="modal-title" id="modal-title">Title goes here</h3>
-          <div class="modal-body" id="modal-body-content">
-            <!-- Dynamically populated by JS -->
-          </div>
-        </div>
-      </div>
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-gold) 0%, #B89025 100%);
+  color: var(--color-charcoal-dark);
+  border: none;
+  box-shadow: var(--shadow-gold-soft);
+}
 
-      <!-- Career / Experience Timeline Section -->
-      <section id="experience" class="section section-alt">
-        <div class="container">
-          <div class="section-header animate-on-scroll">
-            <span class="section-subtitle">Career Journey</span>
-            <h2 class="section-title">From Selling to Storytelling</h2>
-            <div class="section-divider"></div>
-          </div>
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold-heavy);
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 100%);
+}
 
-          <div class="timeline-filters animate-on-scroll">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="content">Content</button>
-            <button class="filter-btn" data-filter="sales">Sales</button>
-            <button class="filter-btn" data-filter="education">Education</button>
-          </div>
+.btn-secondary {
+  background: transparent;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-          <div class="timeline-container">
+.btn-secondary:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  transform: translateY(-2px);
+}
 
-            <!-- Item 1: Social Media Head -->
-            <div class="timeline-item" data-category="content">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content-wrapper">
-                <div class="timeline-card">
-                  <span class="timeline-date">Nov 2024 – Present</span>
-                  <h3 class="timeline-role">Social Media Head</h3>
-                  <h4 class="timeline-company">Tameer Group of Companies</h4>
-                  <ul class="timeline-bullets">
-                    <li>Leading the full digital content strategy for a high-volume real estate brand targeting domestic and overseas buyers.</li>
-                    <li>Scripting, directing, and publishing weekly YouTube and Instagram content driving qualified investor inquiries.</li>
-                    <li>Managing a content team across video, design, and copywriting verticals.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+/* Glass Card Component */
+.glass-card {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  padding: 2.5rem;
+  transition: var(--transition-smooth);
+}
 
-            <!-- Item 2: Content Manager -->
-            <div class="timeline-item" data-category="content">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content-wrapper">
-                <div class="timeline-card">
-                  <span class="timeline-date">Jan 2024 – Oct 2024</span>
-                  <h3 class="timeline-role">Content Manager & Script Writer</h3>
-                  <h4 class="timeline-company">Freelance — Real Estate Brands</h4>
-                  <ul class="timeline-bullets">
-                    <li>Developed scripts, hooks, and full content strategies for multiple Pakistan-based real estate firms targeting expat investors.</li>
-                    <li>Produced content calendars aligned to sales cycles and platform algorithm behavior.</li>
-                    <li>Achieved measurable growth in follower engagement and inbound inquiries for client brands.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+.glass-card:hover {
+  border-color: var(--border-glass-hover);
+  box-shadow: var(--shadow-gold-soft), var(--shadow-card);
+  transform: translateY(-5px);
+}
 
-            <!-- Item 3: Dreamworld -->
-            <div class="timeline-item" data-category="sales">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content-wrapper">
-                <div class="timeline-card">
-                  <span class="timeline-date">Mar 2023 – Dec 2023</span>
-                  <h3 class="timeline-role">Sales Ambassador</h3>
-                  <h4 class="timeline-company">Dreamworld Resort, Hotel & Golf Course</h4>
-                  <ul class="timeline-bullets">
-                    <li>Managed high-value client relationships, conducting premium property presentations and plot sales.</li>
-                    <li>Studied client profiles in real-time, matching luxury offerings to specific customer purchasing power.</li>
-                    <li>Acquired direct sales expertise and advanced understanding of negotiation and relationship-building.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+/* Hero Portrait Visual (Non-placeholder, stylized graphic) */
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-            <!-- Item 4: Dua Green Farm House -->
-            <div class="timeline-item" data-category="sales">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content-wrapper">
-                <div class="timeline-card">
-                  <span class="timeline-date">Nov 2022 – Jul 2023</span>
-                  <h3 class="timeline-role">Sales Ambassador</h3>
-                  <h4 class="timeline-company">Dua Green Farm House</h4>
-                  <ul class="timeline-bullets">
-                    <li>Managed client inquiries, hosted property walkthroughs, and closed plot sales contracts.</li>
-                    <li>Assisted international and local clients in understanding land titles, documentation, and transfer procedures.</li>
-                    <li>Aligned high-ticket investment opportunities with client risk thresholds and family requirements.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+.visual-backdrop {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.12) 0%, transparent 70%);
+  z-index: 1;
+  filter: blur(10px);
+}
 
-            <!-- Item 5: Willow Brook School -->
-            <div class="timeline-item" data-category="education">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content-wrapper">
-                <div class="timeline-card">
-                  <span class="timeline-date">Aug 2024 – Apr 2025</span>
-                  <h3 class="timeline-role">Academic Instructor of Biology</h3>
-                  <h4 class="timeline-company">The Willow Brook School</h4>
-                  <ul class="timeline-bullets">
-                    <li>Instructed secondary biology courses, translating complex cellular processes into clear visual lectures.</li>
-                    <li>Designed lesson structures and assessments to ensure high class engagement and subject comprehension.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+.portrait-frame {
+  position: relative;
+  z-index: 2;
+  width: 300px;
+  height: 400px;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  background: rgba(31, 41, 55, 0.4);
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
 
-            <!-- Item 6: Fox Valley School -->
-            <div class="timeline-item" data-category="education">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content-wrapper">
-                <div class="timeline-card">
-                  <span class="timeline-date">Dec 2022 – Mar 2024</span>
-                  <h3 class="timeline-role">Teacher of Science & English</h3>
-                  <h4 class="timeline-company">Fox Valley Secondary School</h4>
-                  <ul class="timeline-bullets">
-                    <li>Taught science and English curricula, developing clear, highly communicative instructional techniques.</li>
-                    <li>Built classroom management and public presentation systems to capture and retain student attention.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+.portrait-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+  transform: skewX(-25deg);
+  transition: 0.75s;
+}
 
-          </div>
-        </div>
-      </section>
+.portrait-frame:hover::before {
+  left: 150%;
+}
 
-      <!-- Contact Section -->
-      <section id="contact" class="section">
-        <div class="container">
-          <div class="section-header animate-on-scroll">
-            <span class="section-subtitle">Let's Work Together</span>
-            <h2 class="section-title">Connect With Me</h2>
-            <div class="section-divider"></div>
-          </div>
+.portrait-graphic {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1A2333 0%, #0B0E17 100%);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.05);
+  position: relative;
+}
 
-          <div class="contact-card-centered glass-card animate-on-scroll">
-            <p class="contact-lead">
-              Let's build a strategy that translates script views into investment leads.
-            </p>
-            <p style="margin-bottom: 2.5rem; max-width: 650px; margin-left: auto; margin-right: auto;">
-              Whether you need high-impact hooks for short-form reels, in-depth YouTube scripts, or a full content calendar strategy for your real estate brand, I'm ready to help. Reach out directly through any of the channels below:
-            </p>
+.portrait-decor {
+  font-family: var(--font-serif);
+  font-size: 8rem;
+  color: rgba(212, 175, 55, 0.08);
+  position: absolute;
+  user-select: none;
+  font-weight: 700;
+}
 
-            <div class="contact-actions-grid">
-              <a href="mailto:fizzahehtisham@gmail.com" class="contact-action-btn primary">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span class="contact-action-title">Email Me</span>
-                <span class="contact-action-detail">fizzahehtisham@gmail.com</span>
-              </a>
+.portrait-content {
+  text-align: center;
+  z-index: 2;
+}
 
-              <a href="https://wa.me/923336966337" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.709 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-                <span class="contact-action-title">WhatsApp Me</span>
-                <span class="contact-action-detail">+92 333 6966337</span>
-              </a>
+.portrait-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--color-gold);
+}
 
-              <a href="tel:+923336966337" class="contact-action-btn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span class="contact-action-title">Call Directly</span>
-                <span class="contact-action-detail">+92 333 6966337</span>
-              </a>
-            </div>
+.portrait-icon svg {
+  width: 36px;
+  height: 36px;
+}
 
-            <div class="contact-location-info">
-              📍 Based in <strong>Karachi, Sindh, Pakistan</strong> · Available for remote collaborations worldwide.
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+.portrait-title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1.5px;
+}
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-logo">
-          <a href="#home" style="text-decoration:none; display:inline-block;">
-            <span class="logo-text" style="font-size:2rem;">Fizzah</span>
-          </a>
-          <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:3px; color:var(--color-gold); margin-top:0.25rem;">
-            Content Strategy & Real Estate Copywriting
-          </p>
-        </div>
+.portrait-subtitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
 
-        <ul class="footer-nav">
-          <li><a href="#home" class="footer-link">Home</a></li>
-          <li><a href="#about" class="footer-link">About</a></li>
-          <li><a href="#services" class="footer-link">Services</a></li>
-          <li><a href="#scripts" class="footer-link">Scripts</a></li>
-          <li><a href="#ideas" class="footer-link">Ideas</a></li>
-          <li><a href="#experience" class="footer-link">Experience</a></li>
+.portrait-quote {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--color-gray-muted);
+  font-style: italic;
+  line-height: 1.4;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  padding-top: 1rem;
+  max-width: 220px;
+}
+
+/* Sections - General */
+.section {
+  padding: 7.5rem 0;
+  position: relative;
+}
+
+.section-alt {
+  background-color: rgba(17, 24, 39, 0.6);
+  border-top: 1px solid rgba(212, 175, 55, 0.05);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.05);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4.5rem;
+}
+
+.section-subtitle {
+  color: var(--color-gold);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: 2.75rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.5px;
+}
+
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  margin: 0 auto;
+}
+
+/* About / Philosophy Section */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3.5rem;
+  align-items: stretch;
+}
+
+.about-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lead-p {
+  font-size: 1.3rem;
+  color: var(--color-white);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-serif);
+  border-left: 2px solid var(--color-gold);
+  padding-left: 1.5rem;
+}
+
+.body-p {
+  margin-bottom: 1.5rem;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-box {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.feature-icon-wrapper {
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.feature-icon-wrapper svg {
+  width: 24px;
+  height: 24px;
+}
+
+.feature-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--color-white);
+}
+
+.feature-desc {
+  font-size: 0.88rem;
+  color: var(--color-gray-muted);
+}
+
+/* Unique Human Sidebar - "Beyond The Desk" */
+.human-sidebar {
+  background: linear-gradient(135deg, rgba(31, 41, 55, 0.4) 0%, rgba(17, 24, 39, 0.5) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  padding-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-title span {
+  font-size: 0.8rem;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-gold);
+}
+
+.interest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.interest-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.interest-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.interest-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-white);
+  margin-bottom: 0.1rem;
+}
+
+.interest-detail {
+  font-size: 0.8rem;
+  color: var(--color-gray-muted);
+}
+
+/* Services Section */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(10px);
+}
+
+.service-icon {
+  margin-bottom: 1.5rem;
+  color: var(--color-gold);
+}
+
+.service-icon svg {
+  width: 42px;
+  height: 42px;
+}
+
+.service-title {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.service-bullets {
+  list-style: none;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
+  color: var(--color-gray-muted);
+}
+
+.service-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.service-bullets li::before {
+  content: '✓';
+  color: var(--color-gold);
+  font-weight: bold;
+}
+
+/* Interactive Script Reader / Teleprompter Section */
+.script-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.script-meta {
+  padding-top: 1.5rem;
+}
+
+.script-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.script-title {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-family: var(--font-serif);
+}
+
+.script-context {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.script-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.highlight-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.highlight-num {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-gold);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.highlight-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-white);
+  margin-bottom: 0.1rem;
+}
+
+.highlight-desc {
+  font-size: 0.85rem;
+  color: var(--color-gray-muted);
+}
+
+/* Teleprompter Display Box */
+.teleprompter-card {
+  background: #11151D;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.teleprompter-header {
+  background: rgba(212, 175, 55, 0.05);
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teleprompter-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+.teleprompter-indicator .blink-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-gold);
+  border-radius: 50%;
+  animation: pulse-red 1.5s infinite;
+}
+
+.teleprompter-controls-top {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.tele-btn-toggle {
+  background: transparent;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: var(--color-gold);
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+}
+
+.tele-btn-toggle:hover, .tele-btn-toggle.active {
+  background: var(--color-gold);
+  color: var(--color-charcoal-dark);
+}
+
+.teleprompter-screen {
+  height: 350px;
+  padding: 2.5rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: relative;
+  background-color: #0E1117;
+}
+
+/* Custom Scrollbar for Teleprompter Screen */
+.teleprompter-screen::-webkit-scrollbar {
+  width: 6px;
+}
+.teleprompter-screen::-webkit-scrollbar-track {
+  background: #0E1117;
+}
+.teleprompter-screen::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 3px;
+}
+
+/* Reading line indicator overlays for teleprompter */
+.teleprompter-card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(212, 175, 55, 0.4);
+  z-index: 10;
+  pointer-events: none;
+  display: none;
+}
+
+.teleprompter-card.teleprompter-active::after {
+  display: block;
+}
+
+.script-content-flow {
+  padding-bottom: 200px;
+  transition: transform 0.3s ease;
+}
+
+/* Teleprompter mode styling */
+.teleprompter-active .script-content-flow {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  font-weight: 500;
+  text-align: center;
+}
+
+.teleprompter-active .script-chunk {
+  margin-bottom: 4rem;
+  opacity: 0.25;
+  transition: var(--transition-smooth);
+  color: var(--color-white);
+  padding: 0 1rem;
+}
+
+.teleprompter-active .script-chunk.current-chunk {
+  opacity: 1;
+  transform: scale(1.05);
+  color: var(--color-gold-light);
+}
+
+/* Teleprompter chunk internal divisions */
+.script-chunk .chunk-tag {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-gold);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.teleprompter-active .script-chunk .chunk-tag {
+  font-size: 0.9rem;
+}
+
+.script-chunk p {
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+}
+
+.teleprompter-active .script-chunk p {
+  font-family: var(--font-serif);
+}
+
+.script-chunk .visual-note {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-gray-muted);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.teleprompter-active .script-chunk .visual-note {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.4);
+}
+
+.teleprompter-footer {
+  background: rgba(13,17,23,0.9);
+  padding: 1.25rem 2rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tele-playback-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.btn-play-pause {
+  background: var(--color-gold);
+  color: var(--color-charcoal-dark);
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(212,175,55,0.3);
+  transition: var(--transition-smooth);
+}
+
+.btn-play-pause:hover {
+  transform: scale(1.1);
+  background: var(--color-gold-light);
+}
+
+.btn-play-pause svg {
+  width: 20px;
+  height: 20px;
+}
+
+.tele-speed-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.tele-speed-controls span {
+  color: var(--color-gray-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tele-speed-controls input[type="range"] {
+  accent-color: var(--color-gold);
+  width: 100px;
+  cursor: pointer;
+}
+
+.speed-val {
+  font-weight: bold;
+  color: var(--color-gold);
+  width: 35px;
+}
+
+.tele-reset-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-gray-light);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition-smooth);
+}
+
+.tele-reset-btn:hover {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+/* Content Ideas Grid */
+.ideas-tabs-container {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.idea-tab-btn {
+  background: transparent;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  color: var(--color-gray-muted);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.idea-tab-btn.active, .idea-tab-btn:hover {
+  background: var(--color-gold);
+  color: var(--color-charcoal-dark);
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-gold-soft);
+}
+
+.ideas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.idea-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.idea-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.idea-icon {
+  color: var(--color-gold);
+  margin-bottom: 1.25rem;
+}
+
+.idea-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.idea-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-white);
+  line-height: 1.4;
+}
+
+.idea-action-txt {
+  margin-top: auto;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition-smooth);
+}
+
+.idea-card:hover .idea-action-txt {
+  gap: 0.8rem;
+}
+
+/* Strategy Detail Drawer Overlay (Glassmorphic popup for strategy ideas) */
+.strategy-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  padding: 1.5rem;
+}
+
+.strategy-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.strategy-modal {
+  background: #11151D;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: var(--shadow-gold-heavy), 0 30px 60px rgba(0,0,0,0.6);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  padding: 2.5rem;
+  position: relative;
+  transform: scale(0.9);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.strategy-overlay.active .strategy-modal {
+  transform: scale(1);
+}
+
+.btn-close-modal {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: transparent;
+  border: none;
+  color: var(--color-gray-muted);
+  font-size: 1.75rem;
+  cursor: pointer;
+  line-height: 1;
+  transition: var(--transition-smooth);
+}
+
+.btn-close-modal:hover {
+  color: var(--color-gold);
+}
+
+.modal-label {
+  font-size: 0.75rem;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.modal-title {
+  font-size: 1.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blueprint-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.25rem;
+}
+
+.blueprint-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--color-white);
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blueprint-title::before {
+  content: '⚡';
+  color: var(--color-gold);
+}
+
+.blueprint-content {
+  font-size: 0.95rem;
+  color: var(--color-gray-muted);
+}
+
+/* Timeline Career Journey Section */
+.timeline-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--color-gray-muted);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.filter-btn.active, .filter-btn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0.5) 0%, rgba(212, 175, 55, 0.05) 100%);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
+}
+
+.timeline-item.hidden {
+  opacity: 0;
+  transform: scale(0.9) translateY(20px);
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-content-wrapper {
+  width: 45%;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 1.5rem;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-charcoal-dark);
+  border: 3px solid var(--color-gold);
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+  transition: var(--transition-smooth);
+}
+
+.timeline-item:hover .timeline-dot {
+  background-color: var(--color-gold);
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.timeline-card {
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: 8px;
+  padding: 2rem;
+  position: relative;
+  box-shadow: var(--shadow-card);
+}
+
+.timeline-card::after {
+  content: '';
+  position: absolute;
+  top: 1.25rem;
+  border-style: solid;
+}
+
+.timeline-item:nth-child(odd) .timeline-card::after {
+  left: 100%;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgba(31, 41, 55, 0.4);
+}
+
+.timeline-item:nth-child(even) .timeline-card::after {
+  right: 100%;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgba(31, 41, 55, 0.4) transparent transparent;
+}
+
+.timeline-date {
+  display: inline-block;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  color: var(--color-gold);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.timeline-role {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin-bottom: 0.25rem;
+}
+
+.timeline-company {
+  font-size: 0.9rem;
+  color: var(--color-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.25rem;
+}
+
+.timeline-bullets {
+  list-style: none;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.timeline-bullets li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: var(--color-gray-muted);
+}
+
+.timeline-bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-gold);
+  font-size: 1.2rem;
+  line-height: 1;
+  top: -1px;
+}
+
+/* Contact Section Centered Layout */
+.contact-card-centered {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.contact-action-btn {
+  padding: 1.75rem 1rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  height: auto;
+  text-decoration: none;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  background: rgba(13, 17, 23, 0.4);
+  transition: var(--transition-smooth);
+}
+
+.contact-action-btn:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-gold);
+  background: rgba(212, 175, 55, 0.05);
+  box-shadow: var(--shadow-gold-soft);
+}
+
+.contact-action-btn.primary {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.03) 100%);
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.contact-action-btn.primary:hover {
+  background: linear-gradient(135deg, var(--color-gold) 0%, #B89025 100%);
+  color: var(--color-charcoal-dark);
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-gold-heavy);
+}
+
+.contact-action-btn.primary:hover .contact-action-title,
+.contact-action-btn.primary:hover .contact-action-detail {
+  color: var(--color-charcoal-dark);
+}
+
+.contact-action-btn.primary:hover svg {
+  color: var(--color-charcoal-dark);
+}
+
+.contact-action-btn svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-gold);
+  transition: var(--transition-smooth);
+}
+
+.contact-action-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-white);
+  transition: var(--transition-smooth);
+}
+
+.contact-action-detail {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-gray-muted);
+  transition: var(--transition-smooth);
+}
+
+.contact-location-info {
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+  padding-top: 1.75rem;
+  color: var(--color-gray-muted);
+  font-size: 0.95rem;
+}
+
+.contact-location-info strong {
+  color: var(--color-white);
+}
+
+/* Footer Section */
+.footer {
+  background-color: #080B10;
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
+  padding: 4rem 0 2rem;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 2rem;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--color-gray-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition-smooth);
+}
+
+.footer-link:hover {
+  color: var(--color-gold);
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: var(--color-gray-dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Scroll Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-on-scroll.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(212, 175, 55, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(212, 175, 55, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .ideas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navigation */
+  .mobile-nav-toggle {
+    display: block;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 75px);
+    background: rgba(13, 17, 23, 0.98);
+    flex-direction: column;
+    padding: 3rem 0;
+    gap: 2rem;
+    transition: var(--transition-smooth);
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  /* Hero */
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .hero-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  /* Services & Ideas */
+  .services-grid, .ideas-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Script */
+  .script-layout {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+  
+  /* Timeline */
+  .timeline-container::before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    flex-direction: row !important;
+    margin-bottom: 3rem;
+  }
+  
+  .timeline-content-wrapper {
+    width: calc(100% - 40px);
+    margin-left: 40px;
+  }
+  
+  .timeline-dot {
+    left: 20px;
+  }
+  
+  .timeline-card::after {
+    left: auto !important;
+    right: 100% !important;
+    border-width: 10px 10px 10px 0 !important;
+    border-color: transparent rgba(31, 41, 55, 0.4) transparent transparent !important;
+  }
+  
+  /* Contact */
+  .contact-actions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="logo-container" id="nav-logo">
+        <span class="logo-text">Fizzah</span>
+        <span class="logo-sub">Content & Sales</span>
+      </a>
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#scripts" class="nav-link">Sample Script</a></li>
+          <li><a href="#ideas" class="nav-link">Content Ideas</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-cta">Let's Connect</a></li>
         </ul>
+      </nav>
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-        <p class="footer-copy">
-          &copy; 2026 Fizzah Ehtisham. All rights reserved. Crafted for premium real estate content.
-        </p>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+      <div class="container hero-layout">
+        <div class="hero-text animate-on-scroll">
+          <div class="hero-badge"><span class="dot"></span>Real Estate Content Specialist</div>
+          <h1 class="hero-title">Great content doesn't just get views.<br><span>It builds trust and drives action.</span></h1>
+          <p class="hero-subtitle">Script Writer | Content Strategist | Social Media Head</p>
+          <p class="hero-desc">I combine real-world real estate sales experience with psychology-driven content strategy. I don't just write scripts. I build digital funnels that turn casual viewers into qualified buyers, specifically optimized for USA real estate and overseas Pakistani investors.</p>
+          <div class="hero-buttons">
+            <a href="#scripts" class="btn btn-primary">View Sample Script</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual animate-on-scroll">
+          <div class="visual-backdrop"></div>
+          <div class="portrait-frame">
+            <div class="portrait-graphic">
+              <div class="portrait-decor">FE</div>
+              <div class="portrait-content">
+                <div class="portrait-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3 class="portrait-title">Fizzah Ehtisham</h3>
+                <p class="portrait-subtitle">Karachi, Pakistan</p>
+                <p class="portrait-quote">"The writer who knows how to sell. Combining sales psychology with audience retention."</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- JS Module -->
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <!-- ABOUT -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-subtitle">My Philosophy</span>
+          <h2 class="section-title">The Psychology of the Script</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-text-content animate-on-scroll">
+            <p class="lead-p">Most writers focus purely on metrics like watch time or click rates. I focus on customer behavior.</p>
+            <p class="body-p">Having worked face-to-face with investors as a Sales Ambassador at Dreamworld and Dua Green Farm House, I learned customer psychology on the ground. I understand the questions buyers ask, the unspoken objections they hold, and the trust issues they face when investing, particularly those living abroad in the USA, Canada, and the UK.</p>
+            <p class="body-p">When I write a script for a real estate campaign, I am not just creating entertainment. I am preemptively addressing objections, building institutional trust, and guiding the viewer toward a business goal.</p>
+            <div class="about-features">
+              <div class="feature-box">
+                <div class="feature-icon-wrapper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <div><h4 class="feature-title">Sales Psychology</h4><p class="feature-desc">Structuring hooks around actual consumer desires and barriers.</p></div>
+              </div>
+              <div class="feature-box">
+                <div class="feature-icon-wrapper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <div><h4 class="feature-title">Strategic Hooks</h4><p class="feature-desc">Capturing attention within the first 3 seconds with relevant, high-impact statements.</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="human-sidebar animate-on-scroll">
+            <div>
+              <h3 class="sidebar-title">Beyond the Desk <span>Personal</span></h3>
+              <p style="font-size:0.9rem;margin-bottom:1.5rem;line-height:1.5;">A writer's creativity comes from real life. Here is what keeps my mind active when I'm not crafting scripts:</p>
+              <ul class="interest-list">
+                <li class="interest-item"><div class="interest-icon">🏍️</div><div><p class="interest-name">Motorcycle Riding</p><p class="interest-detail">Freedom on the road sharpens perspective.</p></div></li>
+                <li class="interest-item"><div class="interest-icon">📚</div><div><p class="interest-name">Reading & Research</p><p class="interest-detail">Psychology, marketing, and human behavior.</p></div></li>
+                <li class="interest-item"><div class="interest-icon">🎬</div><div><p class="interest-name">Analyzing Viral Content</p><p class="interest-detail">Reverse-engineering what makes people stop scrolling.</p></div></li>
+                <li class="interest-item"><div class="interest-icon">🌍</div><div><p class="interest-name">Global Market Watching</p><p class="interest-detail">Tracking expat investment trends across USA, UK, Canada.</p></div></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-subtitle">What I Offer</span>
+          <h2 class="section-title">Services Built for Results</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="services-grid">
+          <div class="glass-card service-card animate-on-scroll">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3 class="service-title">Real Estate Script Writing</h3>
+            <p class="service-desc">Psychology-driven scripts engineered to convert viewers into investors. Every word serves a strategic function — from the hook to the CTA.</p>
+            <ul class="service-bullets"><li>YouTube long-form scripts (8–20 min)</li><li>Instagram & TikTok reels (30–90 sec)</li><li>Investor pitch video scripts</li><li>Property tour narrations</li></ul>
+          </div>
+          <div class="glass-card service-card animate-on-scroll">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3 class="service-title">Content Strategy & Planning</h3>
+            <p class="service-desc">Full-funnel content calendars that align with sales cycles, audience buying behavior, and platform algorithms for maximum reach.</p>
+            <ul class="service-bullets"><li>Monthly content calendars</li><li>Audience persona development</li><li>Platform-specific strategy (IG, YT, TikTok)</li><li>Competitor content audits</li></ul>
+          </div>
+          <div class="glass-card service-card animate-on-scroll">
+            <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3 class="service-title">Social Media Management</h3>
+            <p class="service-desc">End-to-end management of real estate brand social channels — turning passive followers into active leads through consistent, trust-building content.</p>
+            <ul class="service-bullets"><li>Profile optimization & branding</li><li>Posting schedules & community mgmt</li><li>DM funnel scripts & responses</li><li>Analytics reporting & iteration</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCRIPT READER -->
+    <section id="scripts" class="section section-alt">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-subtitle">Work Sample</span>
+          <h2 class="section-title">Live Script Reader</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="script-layout">
+          <div class="script-meta animate-on-scroll">
+            <span class="script-badge">YouTube Script · Real Estate</span>
+            <h3 class="script-title">5 Biggest Mistakes First-Time Buyers Make</h3>
+            <p class="script-context">This script targets first-time US home buyers overwhelmed by the process. It leads with a counter-intuitive hook to stop the scroll, then delivers rapid-fire value while building trust through shared buyer psychology.</p>
+            <ul class="script-highlights">
+              <li class="highlight-item"><span class="highlight-num">1</span><div><p class="highlight-title">Counter-Intuitive Hook</p><p class="highlight-desc">Opens with the most surprising mistake — not the most obvious one.</p></div></li>
+              <li class="highlight-item"><span class="highlight-num">2</span><div><p class="highlight-title">Sustained Retention Loop</p><p class="highlight-desc">Mistake #5 is teased at second 8 and revealed at second 50.</p></div></li>
+              <li class="highlight-item"><span class="highlight-num">3</span><div><p class="highlight-title">Low-Friction CTA</p><p class="highlight-desc">Comment keyword activation — zero sales pressure.</p></div></li>
+            </ul>
+          </div>
+          <div class="teleprompter-card" id="teleprompter-widget">
+            <div class="teleprompter-header">
+              <div class="teleprompter-indicator"><span class="blink-dot" id="blink-dot"></span><span id="tele-status">Teleprompter Off</span></div>
+              <div class="teleprompter-controls-top">
+                <button class="tele-btn-toggle active" id="btn-tele-off">Read Mode</button>
+                <button class="tele-btn-toggle" id="btn-tele-on">Teleprompter</button>
+              </div>
+            </div>
+            <div class="teleprompter-screen" id="tele-screen">
+              <div class="script-content-flow" id="script-flow">
+                <div class="script-chunk current-chunk"><span class="chunk-tag">⚡ HOOK — 0:00 to 0:08</span><p>The biggest homebuying mistake isn't buying the wrong house.</p><p>It's talking to the wrong bank first.</p><span class="visual-note">📸 Visual: Split screen — buyer at bank desk vs buyer signing keys</span></div>
+                <div class="script-chunk"><span class="chunk-tag">🔁 LOOP BAIT — 0:08 to 0:12</span><p>And by the end of this video, I'll also reveal Mistake Number 5 — the one that quietly costs buyers an average of $11,000.</p><span class="visual-note">📸 Visual: Text overlay "Mistake #5 = $11,000" with alert icon</span></div>
+                <div class="script-chunk"><span class="chunk-tag">📌 MISTAKE 1 — 0:12 to 0:20</span><p>Mistake One: Getting pre-qualified instead of pre-approved.</p><p>Pre-qualification is just an estimate. Pre-approval is a commitment. Sellers don't take pre-qualification seriously in today's market.</p><span class="visual-note">📸 Visual: Checklist animation — "Pre-Qual ❌" vs "Pre-Approval ✅"</span></div>
+                <div class="script-chunk"><span class="chunk-tag">📌 MISTAKE 2 — 0:20 to 0:28</span><p>Mistake Two: Skipping the home inspection to win a bidding war.</p><p>I get it. Emotions are high. But waiving inspection means you're buying the seller's hidden problems too.</p><span class="visual-note">📸 Visual: Cracked foundation or leaky ceiling b-roll</span></div>
+                <div class="script-chunk"><span class="chunk-tag">📌 MISTAKE 3 — 0:28 to 0:36</span><p>Mistake Three: Draining your savings account for the down payment.</p><p>If you have zero cash reserves after closing — one broken AC unit could put you in serious debt. Always keep 3 months of expenses liquid.</p><span class="visual-note">📸 Visual: Empty wallet graphic → Reserve fund graphic</span></div>
+                <div class="script-chunk"><span class="chunk-tag">📌 MISTAKE 4 — 0:36 to 0:44</span><p>Mistake Four: Not accounting for hidden costs.</p><p>Property taxes. HOA fees. Homeowner's insurance. Closing costs. These alone can add 2 to 5 percent to your purchase price. Did your agent mention that?</p><span class="visual-note">📸 Visual: Cost breakdown infographic on screen</span></div>
+                <div class="script-chunk"><span class="chunk-tag">⚠️ MISTAKE 5 (PAYOFF) — 0:44 to 0:55</span><p>And Mistake Five — the one worth $11,000?</p><p>Not negotiating the seller's concessions. Most buyers don't know they can ask the seller to cover closing costs, repairs, or even rate buydowns.</p><p>Your agent should be doing this. If they're not — you need a different agent.</p><span class="visual-note">📸 Visual: Contract signing with "Seller Concessions" highlighted</span></div>
+                <div class="script-chunk"><span class="chunk-tag">📣 CALL TO ACTION — 0:55 to 1:05</span><p>If this was helpful, comment the word CHECKLIST below.</p><p>I'll send you our complete First-Time Buyer Mistake-Proof Checklist — directly to your inbox. No cost. Just clarity.</p><span class="visual-note">📸 Visual: Comment section animation + DM icon</span></div>
+              </div>
+            </div>
+            <div class="teleprompter-footer">
+              <div class="tele-playback-controls">
+                <button class="btn-play-pause" id="btn-play-pause" aria-label="Play or Pause">
+                  <svg id="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg id="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <div class="tele-speed-controls">
+                  <span>Speed</span>
+                  <input type="range" id="tele-speed" min="1" max="10" value="5" />
+                  <span class="speed-val" id="speed-val">5x</span>
+                </div>
+              </div>
+              <button class="tele-reset-btn" id="btn-reset-tele">↺ Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT IDEAS -->
+    <section id="ideas" class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-subtitle">Strategy Showcase</span>
+          <h2 class="section-title">Content Ideas & Blueprints</h2>
+          <div class="section-divider"></div>
+          <p style="margin-top:1.25rem;color:var(--color-gray-muted);">Click any card to reveal the full content strategy blueprint behind each idea.</p>
+        </div>
+        <div class="ideas-tabs-container animate-on-scroll">
+          <button class="idea-tab-btn active" data-category="real-estate">Real Estate</button>
+          <button class="idea-tab-btn" data-category="short-form">Short Form</button>
+        </div>
+        <div class="ideas-grid">
+          <div class="glass-card idea-card animate-on-scroll" data-category="real-estate" data-slug="mistakes">
+            <div class="idea-content-wrapper">
+              <div class="idea-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h4 class="idea-title">5 Biggest Mistakes First-Time Home Buyers Make</h4>
+              <p style="font-size:0.85rem;color:var(--color-gray-muted);margin-bottom:1.25rem;">Hook: "The biggest homebuying mistake isn't buying the wrong house. It's talking to the wrong bank first."</p>
+              <p class="idea-action-txt">View Full Strategy Blueprint →</p>
+            </div>
+          </div>
+          <div class="glass-card idea-card animate-on-scroll" data-category="real-estate" data-slug="rent-vs-buy">
+            <div class="idea-content-wrapper">
+              <div class="idea-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h4 class="idea-title">Renting vs Buying in 2026 — The Real Numbers</h4>
+              <p style="font-size:0.85rem;color:var(--color-gray-muted);margin-bottom:1.25rem;">Hook: "If you're still renting because you're waiting for interest rates to drop... you might be losing money."</p>
+              <p class="idea-action-txt">View Full Strategy Blueprint →</p>
+            </div>
+          </div>
+          <div class="glass-card idea-card animate-on-scroll" data-category="real-estate" data-slug="buy-power">
+            <div class="idea-content-wrapper">
+              <div class="idea-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h4 class="idea-title">What $500,000 Buys Across Different States</h4>
+              <p style="font-size:0.85rem;color:var(--color-gray-muted);margin-bottom:1.25rem;">Hook: "Here is what half a million dollars actually gets you in Texas vs California vs Florida."</p>
+              <p class="idea-action-txt">View Full Strategy Blueprint →</p>
+            </div>
+          </div>
+          <div class="glass-card idea-card animate-on-scroll" data-category="short-form" data-slug="did-you-know" style="display:none;">
+            <div class="idea-content-wrapper">
+              <div class="idea-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h4 class="idea-title">"Did You Know?" Surprising Real Estate Facts</h4>
+              <p style="font-size:0.85rem;color:var(--color-gray-muted);margin-bottom:1.25rem;">Hook: "Did you know that painting your front door this specific color can add $6,000 to your home's value?"</p>
+              <p class="idea-action-txt">View Full Strategy Blueprint →</p>
+            </div>
+          </div>
+          <div class="glass-card idea-card animate-on-scroll" data-category="short-form" data-slug="myth-vs-reality" style="display:none;">
+            <div class="idea-content-wrapper">
+              <div class="idea-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h4 class="idea-title">Overseas Investment Myths vs Reality</h4>
+              <p style="font-size:0.85rem;color:var(--color-gray-muted);margin-bottom:1.25rem;">Hook: "Myth: Investing in Pakistan from abroad is too risky. Reality: The safest deals never hit the public market."</p>
+              <p class="idea-action-txt">View Full Strategy Blueprint →</p>
+            </div>
+          </div>
+          <div class="glass-card idea-card animate-on-scroll" data-category="short-form" data-slug="tour-60s" style="display:none;">
+            <div class="idea-content-wrapper">
+              <div class="idea-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l4.553-2.069A1 1 0 0121 8.82v6.36a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h4 class="idea-title">Luxury Property Tours in 60 Seconds</h4>
+              <p style="font-size:0.85rem;color:var(--color-gray-muted);margin-bottom:1.25rem;">Hook: "Step inside this $2.5 Million Farmhouse in Karachi's premium sector — in just 60 seconds."</p>
+              <p class="idea-action-txt">View Full Strategy Blueprint →</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRATEGY MODAL -->
+    <div class="strategy-overlay" id="strategy-drawer">
+      <div class="strategy-modal">
+        <button class="btn-close-modal" id="btn-close-strategy" aria-label="Close">&times;</button>
+        <p class="modal-label" id="modal-label">Strategy Blueprint</p>
+        <h3 class="modal-title" id="modal-title"></h3>
+        <div class="modal-body" id="modal-body-content"></div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-subtitle">Career Journey</span>
+          <h2 class="section-title">From Selling to Storytelling</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="timeline-filters animate-on-scroll">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="content">Content</button>
+          <button class="filter-btn" data-filter="sales">Sales</button>
+          <button class="filter-btn" data-filter="education">Education</button>
+        </div>
+        <div class="timeline-container">
+          <div class="timeline-item" data-category="content"><div class="timeline-dot"></div><div class="timeline-content-wrapper"><div class="timeline-card"><span class="timeline-date">Nov 2024 – Present</span><h3 class="timeline-role">Social Media Head</h3><h4 class="timeline-company">Tameer Group of Companies</h4><ul class="timeline-bullets"><li>Leading the full digital content strategy for a high-volume real estate brand targeting domestic and overseas buyers.</li><li>Scripting, directing, and publishing weekly YouTube and Instagram content driving qualified investor inquiries.</li><li>Managing a content team across video, design, and copywriting verticals.</li></ul></div></div></div>
+          <div class="timeline-item" data-category="content"><div class="timeline-dot"></div><div class="timeline-content-wrapper"><div class="timeline-card"><span class="timeline-date">Jan 2024 – Oct 2024</span><h3 class="timeline-role">Content Manager & Script Writer</h3><h4 class="timeline-company">Freelance — Real Estate Brands</h4><ul class="timeline-bullets"><li>Developed scripts, hooks, and full content strategies for multiple Pakistan-based real estate firms targeting expat investors.</li><li>Produced content calendars aligned to sales cycles and platform algorithm behavior.</li><li>Achieved measurable growth in follower engagement and inbound inquiries for client brands.</li></ul></div></div></div>
+          <div class="timeline-item" data-category="sales"><div class="timeline-dot"></div><div class="timeline-content-wrapper"><div class="timeline-card"><span class="timeline-date">Mar 2023 – Dec 2023</span><h3 class="timeline-role">Sales Ambassador</h3><h4 class="timeline-company">Dreamworld Resort, Hotel & Golf Course</h4><ul class="timeline-bullets"><li>Managed high-value client relationships, conducting premium property presentations and plot sales.</li><li>Studied client profiles in real-time, matching luxury offerings to specific customer purchasing power.</li><li>Acquired direct sales expertise and advanced understanding of negotiation and relationship-building.</li></ul></div></div></div>
+          <div class="timeline-item" data-category="sales"><div class="timeline-dot"></div><div class="timeline-content-wrapper"><div class="timeline-card"><span class="timeline-date">Nov 2022 – Jul 2023</span><h3 class="timeline-role">Sales Ambassador</h3><h4 class="timeline-company">Dua Green Farm House</h4><ul class="timeline-bullets"><li>Managed client inquiries, hosted property walkthroughs, and closed plot sales contracts.</li><li>Assisted international and local clients in understanding land titles, documentation, and transfer procedures.</li><li>Aligned high-ticket investment opportunities with client risk thresholds and family requirements.</li></ul></div></div></div>
+          <div class="timeline-item" data-category="education"><div class="timeline-dot"></div><div class="timeline-content-wrapper"><div class="timeline-card"><span class="timeline-date">Aug 2024 – Apr 2025</span><h3 class="timeline-role">Academic Instructor of Biology</h3><h4 class="timeline-company">The Willow Brook School</h4><ul class="timeline-bullets"><li>Instructed secondary biology courses, translating complex cellular processes into clear visual lectures.</li><li>Designed lesson structures and assessments to ensure high class engagement and subject comprehension.</li></ul></div></div></div>
+          <div class="timeline-item" data-category="education"><div class="timeline-dot"></div><div class="timeline-content-wrapper"><div class="timeline-card"><span class="timeline-date">Dec 2022 – Mar 2024</span><h3 class="timeline-role">Teacher of Science & English</h3><h4 class="timeline-company">Fox Valley Secondary School</h4><ul class="timeline-bullets"><li>Taught science and English curricula, developing clear, highly communicative instructional techniques.</li><li>Built classroom management and public presentation systems to capture and retain student attention.</li></ul></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-subtitle">Let's Work Together</span>
+          <h2 class="section-title">Connect With Me</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="contact-card-centered glass-card animate-on-scroll">
+          <p class="contact-lead">Let's build a strategy that translates script views into investment leads.</p>
+          <p style="margin-bottom:2.5rem;max-width:650px;margin-left:auto;margin-right:auto;">Whether you need high-impact hooks for short-form reels, in-depth YouTube scripts, or a full content calendar strategy for your real estate brand, I'm ready to help.</p>
+          <div class="contact-actions-grid">
+            <a href="mailto:fizzahehtisham@gmail.com" class="contact-action-btn primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="contact-action-title">Email Me</span>
+              <span class="contact-action-detail">fizzahehtisham@gmail.com</span>
+            </a>
+            <a href="https://wa.me/923336966337" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.709 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span class="contact-action-title">WhatsApp Me</span>
+              <span class="contact-action-detail">+92 333 6966337</span>
+            </a>
+            <a href="tel:+923336966337" class="contact-action-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="contact-action-title">Call Directly</span>
+              <span class="contact-action-detail">+92 333 6966337</span>
+            </a>
+          </div>
+          <div class="contact-location-info">📍 Based in <strong>Karachi, Sindh, Pakistan</strong> · Available for remote collaborations worldwide.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <a href="#home" style="text-decoration:none;display:inline-block;"><span class="logo-text" style="font-size:2rem;">Fizzah</span></a>
+        <p style="font-size:0.85rem;text-transform:uppercase;letter-spacing:3px;color:var(--color-gold);margin-top:0.25rem;">Content Strategy & Real Estate Copywriting</p>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#home" class="footer-link">Home</a></li>
+        <li><a href="#about" class="footer-link">About</a></li>
+        <li><a href="#services" class="footer-link">Services</a></li>
+        <li><a href="#scripts" class="footer-link">Scripts</a></li>
+        <li><a href="#ideas" class="footer-link">Ideas</a></li>
+        <li><a href="#experience" class="footer-link">Experience</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Fizzah Ehtisham. All rights reserved. Crafted for premium real estate content.</p>
+    </div>
+  </footer>
+
+  <script>
+/* 
+   Fizzah Ehtisham - Portfolio JavaScript
+   Interactive Features: Teleprompter, Strategy Modals, Journey Filter, Scroll Effects
+*/
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+  // =========================================================================
+  // 1. SCROLL EVENTS & NAVBAR STYLING
+  // =========================================================================
+  const navbar = document.getElementById('navbar');
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+  // =========================================================================
+  // 2. MOBILE NAVIGATION MENU
+  // =========================================================================
+  const mobileToggle = document.getElementById('mobile-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const navLinks = document.querySelectorAll('.nav-link, .nav-cta');
+
+  if (mobileToggle && navMenu) {
+    mobileToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      mobileToggle.classList.toggle('active');
+      
+      const spans = mobileToggle.querySelectorAll('span');
+      if (mobileToggle.classList.contains('active')) {
+        spans[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(4px, -4px)';
+      } else {
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        mobileToggle.classList.remove('active');
+        const spans = mobileToggle.querySelectorAll('span');
+        spans.forEach(span => span.style.transform = 'none');
+        spans[1].style.opacity = '1';
+      });
+    });
+  }
+
+  // =========================================================================
+  // 3. ENTRANCE ANIMATIONS (Intersection Observer)
+  // =========================================================================
+  const animateItems = document.querySelectorAll('.animate-on-scroll');
+  
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('appear');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    animateItems.forEach(item => observer.observe(item));
+  } else {
+    animateItems.forEach(item => item.classList.add('appear'));
+  }
+
+  // =========================================================================
+  // 4. INTERACTIVE SCRIPT READER / TELEPROMPTER
+  // =========================================================================
+  const teleprompterCard = document.getElementById('teleprompter-widget');
+  const btnTeleOff = document.getElementById('btn-tele-off');
+  const btnTeleOn = document.getElementById('btn-tele-on');
+  const teleScreen = document.getElementById('tele-screen');
+  const scriptFlow = document.getElementById('script-flow');
+  const btnPlayPause = document.getElementById('btn-play-pause');
+  const playIcon = document.getElementById('play-icon');
+  const pauseIcon = document.getElementById('pause-icon');
+  const teleSpeedInput = document.getElementById('tele-speed');
+  const speedVal = document.getElementById('speed-val');
+  const btnResetTele = document.getElementById('btn-reset-tele');
+  const teleStatus = document.getElementById('tele-status');
+  const blinkDot = document.getElementById('blink-dot');
+  
+  let isTeleprompterMode = false;
+  let isPlaying = false;
+  let scrollSpeed = 5;
+  let scrollInterval = null;
+  let currentChunkIndex = 0;
+  const chunks = document.querySelectorAll('.script-chunk');
+
+  if (btnTeleOn && btnTeleOff && teleprompterCard) {
+    btnTeleOn.addEventListener('click', () => {
+      isTeleprompterMode = true;
+      btnTeleOn.classList.add('active');
+      btnTeleOff.classList.remove('active');
+      teleprompterCard.classList.add('teleprompter-active');
+      teleStatus.textContent = 'Ready to Play';
+      resetTeleprompter();
+    });
+
+    btnTeleOff.addEventListener('click', () => {
+      isTeleprompterMode = false;
+      btnTeleOff.classList.add('active');
+      btnTeleOn.classList.remove('active');
+      teleprompterCard.classList.remove('teleprompter-active');
+      teleStatus.textContent = 'Teleprompter Off';
+      resetTeleprompter();
+    });
+  }
+
+  if (btnPlayPause) {
+    btnPlayPause.addEventListener('click', () => {
+      if (isPlaying) {
+        pauseTeleprompter();
+      } else {
+        playTeleprompter();
+      }
+    });
+  }
+
+  if (teleSpeedInput && speedVal) {
+    teleSpeedInput.addEventListener('input', (e) => {
+      scrollSpeed = parseInt(e.target.value);
+      speedVal.textContent = `${scrollSpeed}x`;
+      if (isPlaying) {
+        pauseTeleprompter();
+        playTeleprompter();
+      }
+    });
+  }
+
+  if (btnResetTele) {
+    btnResetTele.addEventListener('click', resetTeleprompter);
+  }
+
+  function playTeleprompter() {
+    if (!isTeleprompterMode) {
+      btnTeleOn.click();
+    }
+    
+    isPlaying = true;
+    playIcon.style.display = 'none';
+    pauseIcon.style.display = 'block';
+    teleStatus.textContent = 'Scrolling...';
+    blinkDot.style.backgroundColor = '#10B981';
+    blinkDot.style.animation = 'pulse 1s infinite';
+
+    const intervalMs = Math.max(12, 100 - (scrollSpeed * 9));
+
+    scrollInterval = setInterval(() => {
+      teleScreen.scrollTop += 1;
+      updateActiveChunkHighlight();
+
+      if (teleScreen.scrollTop + teleScreen.clientHeight >= teleScreen.scrollHeight - 10) {
+        pauseTeleprompter();
+        teleStatus.textContent = 'Finished';
+      }
+    }, intervalMs);
+  }
+
+  function pauseTeleprompter() {
+    isPlaying = false;
+    playIcon.style.display = 'block';
+    pauseIcon.style.display = 'none';
+    if (isTeleprompterMode) {
+      teleStatus.textContent = 'Paused';
+    }
+    blinkDot.style.backgroundColor = '#D4AF37';
+    blinkDot.style.animation = 'none';
+    clearInterval(scrollInterval);
+  }
+
+  function resetTeleprompter() {
+    pauseTeleprompter();
+    teleScreen.scrollTop = 0;
+    currentChunkIndex = 0;
+    
+    chunks.forEach((chunk, index) => {
+      if (index === 0) {
+        chunk.classList.add('current-chunk');
+      } else {
+        chunk.classList.remove('current-chunk');
+      }
+    });
+
+    if (isTeleprompterMode) {
+      teleStatus.textContent = 'Ready to Play';
+    } else {
+      teleStatus.textContent = 'Teleprompter Off';
+    }
+  }
+
+  function updateActiveChunkHighlight() {
+    const screenCenter = teleScreen.scrollTop + (teleScreen.clientHeight / 2);
+    
+    let activeIndex = 0;
+    chunks.forEach((chunk, index) => {
+      const chunkTop = chunk.offsetTop;
+      const chunkHeight = chunk.clientHeight;
+      
+      if (screenCenter >= chunkTop && screenCenter <= (chunkTop + chunkHeight + 40)) {
+        activeIndex = index;
+      }
+    });
+
+    if (activeIndex !== currentChunkIndex) {
+      chunks[currentChunkIndex].classList.remove('current-chunk');
+      chunks[activeIndex].classList.add('current-chunk');
+      currentChunkIndex = activeIndex;
+    }
+  }
+
+  // =========================================================================
+  // 5. SOCIAL CONTENT IDEAS TAB FILTERING
+  // =========================================================================
+  const tabButtons = document.querySelectorAll('.idea-tab-btn');
+  const ideaCards = document.querySelectorAll('.idea-card');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.getAttribute('data-category');
+      
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      ideaCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (cardCategory === category) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // =========================================================================
+  // 6. DYNAMIC STRATEGY BLUEPRINT DRAWER (MODAL)
+  // =========================================================================
+  const strategyOverlay = document.getElementById('strategy-drawer');
+  const btnCloseStrategy = document.getElementById('btn-close-strategy');
+  const modalLabel = document.getElementById('modal-label');
+  const modalTitle = document.getElementById('modal-title');
+  const modalBodyContent = document.getElementById('modal-body-content');
+
+  const strategyDatabase = {
+    'mistakes': {
+      label: 'Real Estate Strategy',
+      title: '5 Biggest Mistakes First-Time Home Buyers Make',
+      blueprint: [
+        {
+          title: 'Target Audience Profile',
+          content: 'Millennials and Gen Z home buyers in the US who are actively searching but overwhelmed by options and complex finances.'
+        },
+        {
+          title: 'Pacing & Hooks (The Blueprint)',
+          content: '<b>The Hook (0-3s)</b>: "The biggest homebuying mistake isn\'t buying the wrong house. It\'s talking to the wrong bank first." <br><b>Body (3-45s)</b>: Break down 5 mistakes rapidly with on-screen text checklist. Mistake 5 (hidden fees) is teased early and shown at the very end to sustain retention.'
+        },
+        {
+          title: 'Direct Response Call to Action',
+          content: 'Low-friction text: "Comment CHECKLIST below, and I\'ll send you our simple Homebuyer Prep Checklist directly to your inbox."'
+        }
+      ]
+    },
+    'rent-vs-buy': {
+      label: 'Real Estate Strategy',
+      title: 'Renting vs Buying in 2026',
+      blueprint: [
+        {
+          title: 'Target Audience Profile',
+          content: 'Middle-income earners renting in metropolitan suburbs, feeling locked out by high prices and fluctuating mortgage rates.'
+        },
+        {
+          title: 'Pacing & Hooks (The Blueprint)',
+          content: '<b>The Hook (0-3s)</b>: "If you\'re still renting because you\'re waiting for interest rates to drop... you might be losing money."<br><b>Body (3-45s)</b>: Visual split screen. Show rent receipts compounding into $0 equity vs principal amortization building real assets over 5 years.'
+        },
+        {
+          title: 'Direct Response Call to Action',
+          content: '"Click the link in my bio to calculate your local renting break-even point with our free interactive sheets."'
+        }
+      ]
+    },
+    'buy-power': {
+      label: 'Real Estate Strategy',
+      title: 'What $500,000 Buys Across Different States',
+      blueprint: [
+        {
+          title: 'Target Audience Profile',
+          content: 'Remote workers, families looking to relocate, and out-of-state property investors seeking maximum square footage for their budget.'
+        },
+        {
+          title: 'Pacing & Hooks (The Blueprint)',
+          content: '<b>The Hook (0-3s)</b>: "Here is what half a million dollars actually gets you in Texas vs California vs Florida."<br><b>Body (3-45s)</b>: 15 seconds per property listing. High-speed tours focusing on unique features (pool in Florida, acreage in Texas, smart condo in CA).'
+        },
+        {
+          title: 'Direct Response Call to Action',
+          content: '"Which state would you live in? Drop a comment and tell me why."'
+        }
+      ]
+    },
+    'did-you-know': {
+      label: 'Short Form Content',
+      title: '"Did You Know?" Surprising Real Estate Facts',
+      blueprint: [
+        {
+          title: 'Target Audience Profile',
+          content: 'Broad, curiosity-driven social media users. High top-of-funnel reach to build organic brand familiarity.'
+        },
+        {
+          title: 'Pacing & Hooks (The Blueprint)',
+          content: '<b>The Hook (0-3s)</b>: "Did you know that painting your front door this specific color can add $6,000 to your home\'s value?"<br><b>Body (3-45s)</b>: Share the statistics behind Zillow door-color research. Walk through paint costs ($100) vs return on investment.'
+        },
+        {
+          title: 'Direct Response Call to Action',
+          content: '"What color is your front door? Tell me below!"'
+        }
+      ]
+    },
+    'myth-vs-reality': {
+      label: 'Short Form Content',
+      title: 'Investment Myths vs Reality',
+      blueprint: [
+        {
+          title: 'Target Audience Profile',
+          content: 'Expats in the US, Canada, and UK interested in safe, passive wealth generation through international investments.'
+        },
+        {
+          title: 'Pacing & Hooks (The Blueprint)',
+          content: '<b>The Hook (0-3s)</b>: "Myth: Investing in Pakistan from abroad is too risky. Reality: The safest deals never hit the public market."<br><b>Body (3-45s)</b>: De-risk the process. Show how online registries, biometric verifications, and escrow protects expat buyers.'
+        },
+        {
+          title: 'Direct Response Call to Action',
+          content: '"Send a DM with the word VERIFY, and I\'ll send you our legal checklist for overseas land purchases."'
+        }
+      ]
+    },
+    'tour-60s': {
+      label: 'Short Form Content',
+      title: 'Luxury Property Tours in 60 Seconds',
+      blueprint: [
+        {
+          title: 'Target Audience Profile',
+          content: 'Aspirational luxury buyers, high-net-worth real estate scouts.'
+        },
+        {
+          title: 'Pacing & Hooks (The Blueprint)',
+          content: '<b>The Hook (0-3s)</b>: "Step inside this $2.5 Million Farmhouse in Karachi\'s premium sector—in just 60 seconds."<br><b>Body (3-45s)</b>: ASMR-style fast cuts. Focus on sensory highlights: marble texture, water features, lighting designs. Very brief voiceover.'
+        },
+        {
+          title: 'Direct Response Call to Action',
+          content: '"Comment TOUR to receive the private listing dossier and full length high-definition walkthrough link."'
+        }
+      ]
+    }
+  };
+
+  ideaCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const slug = card.getAttribute('data-slug');
+      const data = strategyDatabase[slug];
+      
+      if (data) {
+        modalLabel.textContent = data.label;
+        modalTitle.textContent = data.title;
+        
+        let html = '';
+        data.blueprint.forEach(part => {
+          html += `
+            <div class="blueprint-section">
+              <h4 class="blueprint-title">${part.title}</h4>
+              <p class="blueprint-content">${part.content}</p>
+            </div>
+          `;
+        });
+        
+        modalBodyContent.innerHTML = html;
+        strategyOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  if (btnCloseStrategy && strategyOverlay) {
+    btnCloseStrategy.addEventListener('click', closeStrategyModal);
+    
+    strategyOverlay.addEventListener('click', (e) => {
+      if (e.target === strategyOverlay) {
+        closeStrategyModal();
+      }
+    });
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && strategyOverlay.classList.contains('active')) {
+        closeStrategyModal();
+      }
+    });
+  }
+
+  function closeStrategyModal() {
+    strategyOverlay.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+
+  // =========================================================================
+  // 7. CAREER TIMELINE CATEGORY FILTERING
+  // =========================================================================
+  const timelineFilterButtons = document.querySelectorAll('.filter-btn');
+  const timelineItems = document.querySelectorAll('.timeline-item');
+
+  timelineFilterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      
+      timelineFilterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      timelineItems.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        
+        if (filter === 'all' || itemCategory === filter) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+});
+  </script>
+</body>
 </html>
